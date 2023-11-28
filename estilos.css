@@ -1,0 +1,49 @@
+*{ /*Significa que aplica a todo: selector universal*/
+    padding: 0; /*Elimina el relleno*/
+    margin: 0;
+    box-sizing: border-box; /*el largo y ancho de los elementos incluye el relleno y borde, es decir 0*/
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif; /*Por defecto los navegadores a veces no tienen las fuentes se coloca el orden de sustitucion: sino es arial es helvetica y asi*/
+    color: #fff;
+}
+
+.main-image {
+    background: url("forest.jpg");
+    background-position: center bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem; /*1rem= 16px*/
+    text-align: center;
+}
+
+.main-image h1{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.main-image p{
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.main-image button{
+    background: none;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 3px;
+    padding: 1rem 2rem;
+    text-transform: uppercase; /*Propiedad que pone automaticamente todo en mayusculas*/
+    font-weight: bold;
+    cursor: pointer;
+}
+.main-image h1 span{
+    text-decoration: line-through;
+}
